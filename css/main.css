@@ -1,0 +1,96 @@
+.sd-nav-rules{
+	width: 260px;
+	border-radius: 12px;
+	margin: 10px 0;
+	padding: 18px 30px;
+	background: #222222;
+}
+.flex-for-sdmenu{
+	display: flex;
+	align-items: center;
+}
+.vertical-flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.side-nav{
+	max-height: 1080px;
+	height: 100%;
+	width: 320px;
+	position: fixed;
+	top: 0;
+  	left: 0;
+	background: #222222;
+	padding: 40px 30px;
+	z-index: 1;
+	overflow-x: hidden;
+}
+.sd-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sd-title-txt{
+	font-family: 'Metropolis';
+	font-size: 24px;
+	color: #FFFFFF;
+}
+.sd-des{
+	font-family: 'Metropolis';
+	font-weight: bolder;
+}
+.sd-menu{
+	margin-top: 105px;
+}
+
+.txt-for-sdmenu{
+	font-family: 'Metropolis';
+	margin-left: 20px;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.member-sd{
+	display: flex;
+	align-items: center;
+}
+.sd-following{
+	align-items: flex-start;
+	padding: 50px 30px 0;
+}
+.member-sd{
+	display: flex;
+	margin: 20px 0;
+}
+.memreb-img{
+	margin-right: 22px;
+}
+.follow{
+	font-family: 'Metropolis';
+	margin-bottom: 20px;
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.load{
+	margin-top: 10px;
+}
+.member-txt{
+	font-family: 'Metropolis';
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.load-txt{
+	font-family: 'Metropolis';
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.sd-box:hover{
+	background: #FF2288;
+}
+.z:hover ~ .member-txt{
+	color: #FF2288;
+}
+.load-txt:hover{
+	color: #FF2288;
+}
