@@ -66,6 +66,10 @@
 .memreb-img{
 	margin-right: 22px;
 }
+.memreb-img:hover{
+	width: 60px;
+	height: 60px;
+}
 .follow{
 	font-family: 'Metropolis';
 	margin-bottom: 20px;
@@ -247,12 +251,18 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.pic1:hover{
+	background-size: cover;
+}
 .pic2{
 	width: 100%;
 	height: 210px;
 	background-image: url(../images/main/pic-2.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.pic2:hover{
+	background-size: cover;
 }
 .pic3{
 	width: 100%;
@@ -261,12 +271,18 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.pic3:hover{
+	background-size: cover;
+}
 .pic4{
 	width: 100%;
 	height: 210px;
 	background-image: url(../images/main/pic-4.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.pic4:hover{
+	background-size: cover;
 }
 .pic5{
 	width: 100%;
@@ -275,12 +291,18 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.pic5:hover{
+	background-size: cover;
+}
 .pic6{
 	width: 100%;
 	height: 210px;
 	background-image: url(../images/main/pic-6.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.pic6:hover{
+	background-size: cover;
 }
 .pic7{
 	width: 100%;
@@ -289,12 +311,18 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.pic7:hover{
+	background-size: cover;
+}
 .pic8{
 	width: 100%;
 	height: 210px;
 	background-image: url(../images/main/pic-8.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+.pic8:hover{
+	background-size: cover;
 }
 .pic-txt{
 	width: 290px;
