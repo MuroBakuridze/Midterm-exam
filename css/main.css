@@ -102,22 +102,25 @@
 /*//////////-Top Bar CSS-/////////*/
 
 .top-bar{
-	position: fixed;
-	width: 85%;
-	top: 0;
-  	left: 320px;
-  	z-index: 1;
-	height: 117px;
-	/*margin-left: 320px;*/
-	padding: 30px 90px 30px 40px;
+	position: relative;
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	/*padding-left: 16.5%;*/
+  	/*z-index: 1;*/
+/*	height: 117px;*/
+	padding: 30px 90px 30px 16.5%;
 	/*background-color: #666699;*/
 	display: flex;
 	flex-wrap: nowrap;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
+
 
 }
 .search{
 	width: 25%;
+	margin-left: 5%;
+	height: 70px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -180,14 +183,29 @@
 	font-size: 14px;
 	color: #FFFFFF;
 }
-.first-section{
+
+
+/*/////////-First Section CSS-////////*/
+
+
+/*.first-section{
 	width: 64%;
 	margin-top: 157px;
 	margin-left: 26%;
+}*/
+.first-section{
+	max-width: 1920px;
+	width: 100%;
+	margin: 5% auto 0;
+	padding-left: 16.4%;
+	display: flex;
+	flex-wrap: wrap;
 }
 .nav-bar{
 /*	height: 56px;*/
+	width: 75%;
 	padding: 20px 0;
+	margin-left: 180px;
 /*	background-color: #666699;*/
 	display: flex;
 	flex-wrap: wrap;
@@ -236,9 +254,11 @@
 	/*margin-bottom: 5px;*/
 }
 .picture-content{
+	width: 80%;
 	display: flex;
 	flex-wrap: wrap;
-	height: 700px;
+	margin-left: 180px;
+/*	height: 700px;*/
 	margin-top: 40px;
 	/*align-content: space-around;*/
 	justify-content: space-between;
@@ -332,10 +352,10 @@
 }
 .load-more{
 	height: 56px;
-	width: 38%;
-	margin: auto;
+	width: 18%;
+	margin: 70px auto 0;
 	border-radius: 12px;
-	padding: 15px 105px;
+	padding: 15px 80px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -346,5 +366,82 @@
 	color: #222222;
 }
 .load-more:hover{
+	background-color: #F2F2F2;
+}
+
+/*/////////-Second Section CSS-////////*/
+
+.sec-section{
+	max-width: 1920px;
+	width: 100%;
+	margin: 3% auto 0;
+	padding-left: 16.4%;
+}
+.top-design{
+	width: 15%;
+	padding: 20px 0;
+	margin-left: 180px;
+}
+.top-design-txt{
+	font-family: 'Metropolis';
+	font-size: 32px;
+	color: #222222;
+}
+.design-content{
+	width: 80%;
+	margin-left: 180px;
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+
+}
+.design-box{
+	width: 132px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+.designer-text{
+	width: 80px;
+	height: 42px;
+	margin: 20px 0 5px;
+	text-align: center;
+	font-family: 'Metropolis';
+	font-size: 16px;
+	color: #222222;
+}
+.designer-sec-text{
+	height: 20px;
+	text-align: center;
+	font-family: 'Metropolis';
+	font-size: 12px;
+	color: #222222;
+}
+.des-following-button{
+	width: 132px;
+	border-radius: 12px;
+	padding: 20px;
+	margin-top: 5px;
+	text-align: center;
+	font-family: 'Metropolis';
+	font-size: 14px;
+	color: #222222;
+	background-color: #F2F2F2;
+}
+.des-follow-button{
+	width: 132px;
+	border-radius: 12px;
+	padding: 20px;
+	margin-top: 5px;
+	text-align: center;
+	font-family: 'Metropolis';
+	font-size: 14px;
+	color: #222222;
+}
+.des-follow-button:hover{
 	background-color: #F2F2F2;
 }
