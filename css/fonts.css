@@ -12,12 +12,12 @@
 }
 @font-face {
     font-family: 'Metro-bl';
-    src: url('Metropolis-Black.eot');
-    src: url('Metropolis-Black.eot?#iefix') format('embedded-opentype'),
-        url('Metropolis-Black.woff2') format('woff2'),
-        url('Metropolis-Black.woff') format('woff'),
-        url('Metropolis-Black.ttf') format('truetype'),
-        url('Metropolis-Black.svg#Metropolis-Black') format('svg');
+    src: url('../fonts/Metropolis-Black.eot');
+    src: url('../fonts/Metropolis-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Metropolis-Black.woff2') format('woff2'),
+        url('../fonts/Metropolis-Black.woff') format('woff'),
+        url('../fonts/Metropolis-Black.ttf') format('truetype'),
+        url('../fonts/Metropolis-Black.svg#Metropolis-Black') format('svg');
     font-weight: 900;
     font-style: normal;
     font-display: swap;

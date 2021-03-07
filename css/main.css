@@ -1,3 +1,7 @@
+/*body{
+	max-width: 100%;
+	margin: 0;
+}*/
 .sd-nav-rules{
 	width: 260px;
 	border-radius: 12px;
@@ -100,9 +104,16 @@
 }
 
 /*//////////-Top Bar CSS-/////////*/
-
+.header-bar{
+	position: fixed;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	border-bottom: 0.1px solid #D8D8D8;
+	top: 0;
+	width: 100%;
+}
 .top-bar{
-	position: relative;
+	/*position: relative;*/
 	max-width: 1920px;
 	width: 100%;
 	margin: 0 auto;
@@ -196,14 +207,14 @@
 .first-section{
 	max-width: 1920px;
 	width: 100%;
-	margin: 5% auto 0;
+	margin: 7% auto 0;
 	padding-left: 16.4%;
 	display: flex;
 	flex-wrap: wrap;
 }
 .nav-bar{
 /*	height: 56px;*/
-	width: 75%;
+	width: 80%;
 	padding: 20px 0;
 	margin-left: 180px;
 /*	background-color: #666699;*/
@@ -484,4 +495,32 @@
 	font-size: 16px;
 	color: #222222;
 	margin-bottom: 20px;
+}
+.footer-logos{
+	width: 80%;
+	height: 25px;
+	margin-top: 5%;
+	margin-left: 16.6%;
+	padding-right: 5%; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.soc-logos{
+	padding: 0 180px 5px;
+}
+.a-logos{
+	margin-right: 15px;
+}
+.ft-l-txt{
+	font-family: 'Metropolis';
+	font-size: 16px;
+	color: #222222;
+}
+.ft-span{
+	font-family: 'Metro-bl';
+	font-weight: bolder;
+	color: #222222;
 }
