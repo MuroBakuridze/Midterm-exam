@@ -1,3 +1,4 @@
+/*////////-Side Bar CSS-////////*/
 .sd-nav-rules{
 	width: 260px;
 	border-radius: 12px;
@@ -35,6 +36,22 @@
 	font-size: 24px;
 	color: #FFFFFF;
 }
+.bar-title{
+	width: 15%;
+	height: 40px;
+	background-color: #E7E7E7;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-self: flex-start;
+	display: none;
+}
+.bar-title-txt{
+	font-family: 'Metropolis';
+	font-size: 24px;
+	color: #FF2288;
+}
 .sd-des{
 	font-family: 'Metropolis';
 	font-weight: bolder;
@@ -63,10 +80,6 @@
 }
 .memreb-img{
 	margin-right: 22px;
-}
-.memreb-img:hover{
-	width: 60px;
-	height: 60px;
 }
 .follow{
 	font-family: 'Metropolis';
@@ -115,6 +128,7 @@
 	flex-wrap: nowrap;
 	align-items: center;
 	justify-content: center;
+	z-index: 999;
 }
 .top-bar{
 	width: 100%;
@@ -123,20 +137,18 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 30px;
-
-
 }
 .search{
 	width: 25%;
 	height: 70px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
 .search-icon{
 	width: 30px;
-	height: 30px;
+	height: auto;
 	
 }
 .search input[type=text]{
@@ -148,7 +160,7 @@
 	font-family: 'Metropolis';
 }
 .icons{
-	width: 25%;
+	width: 30%;
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
@@ -191,6 +203,7 @@
 	color: #FFFFFF;
 }
 
+
 /*/////////-Table CSS-/////////*/
 .table-section{
 	width: 100%;
@@ -216,40 +229,20 @@
 }
 .table thead:hover{
 	background-color: #F2F2F2;
+	color: #FF2288;
 }
 .table tbody tr:hover{
 	background-color: #F2F2F2;
+	color: #FF2288;
 }
 #order{
 	padding-left: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*/////////-Footer CSS-////////*/
-
 .footer-container{
-
 	width: 100%;
-	margin-top: 50px;
-	padding-left: 12%;
+	padding:20px 12%;
 	display: flex;
 	flex-wrap: nowrap;
 }
@@ -278,11 +271,14 @@
 	color: #222222;
 	margin-bottom: 20px;
 }
+.ft-txt:hover{
+	 text-decoration: underline;
+	 color: #FF2288;
+}
 .footer-logos{
 	width: 100%;
-	height: 25px;
 	margin-top: 5%;
-	padding-right: 5%; 
+	padding: 15px 12%; 
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -290,7 +286,8 @@
 
 }
 .soc-logos{
-	padding: 0 12% 5px;
+	padding: 0  5px;
+	order: 1;
 }
 .a-logos{
 	margin-right: 15px;
@@ -304,4 +301,164 @@
 	font-family: 'Metro-bl';
 	font-weight: bolder;
 	color: #222222;
+}
+.ft-logo-txt{
+	order: 2;
+}
+
+/*///////////////-Responsive-///////////*/
+
+@media screen and (max-width: 1450px){
+	.icons{
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 1250px){
+		.side-nav{
+		display: none;
+	}
+	.right-side{
+		width: 100%;
+	}
+	.header-bar{
+		width: 100%;
+		padding-left: 12%;
+	}
+	.search-input{
+		display: none;
+	}
+	.search{
+		width: 5%;
+		justify-content: center;
+		padding-bottom: 15px;
+	}
+	.top-bar{
+		justify-content: space-between;
+	}
+	.bar-title{
+		width: 25%;
+		display: flex;
+		align-self: flex-start;
+		margin-top: 10px;
+		padding: 4px;
+		background-image: linear-gradient(to right, rgba(234, 168, 201, 0), rgba(239, 148, 216),rgb(232, 27, 174));
+	}
+	.icons{
+		width: 40%;
+	}
+	.teble-content{
+		padding: 20px 6%;
+	}
+}
+
+@media screen and (max-width: 955px){
+	.table, thead, tbody, th, td, tr { 
+		display: block;
+	}
+	.table td{
+		padding-left: 50%;
+	}
+	#order{
+		padding-left: 50%;
+	}
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	tr { 
+		border: 1px solid #ccc;
+	}
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+
+	td:nth-of-type(1):before { content: "Date"; }
+	td:nth-of-type(2):before { content: "Order ID"; }
+	td:nth-of-type(3):before { content: "Name"; }
+	td:nth-of-type(4):before { content: "Price"; }
+	td:nth-of-type(5):before { content: "Quantity"; }
+	td:nth-of-type(6):before { content: "Total"; }
+	.upload{
+		display: none;
+	}
+	.bar-title{
+		width: 45%;
+	}
+	.search{
+		display: none;
+	}
+	.header-bar{
+		padding: 7%;
+	}
+}
+@media screen and (max-width: 550px){
+	.top-bar{
+		flex-direction: column;
+	}
+	.bar-title{
+		width: 100%;
+		height: 30px;
+	}
+	.icons{
+		width: 100%;
+		margin-top: 15px;
+		margin-left: 5%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.user-icon{
+		width: 36px;
+		height: 36px;
+	}
+	.ft-txt{
+		display: none;
+	}
+	.footer-content{
+		flex-direction: column;
+		padding-left: 25%;
+	}
+	.ft-title{
+		background-color: #FF2288;
+		border-radius: 12px;
+		height: 30px;
+		text-align: center;
+		padding-top: 6px;
+		font-weight: bold;
+		color: #F2F2F2;
+	}
+	.ft-column{
+		width: 70%;
+	}
+	.footer-logos{
+		justify-content: center;
+	}
+	.ft-logo-txt{
+		order: 1;
+		margin-bottom: 10px;
+	}
+	.soc-logos{
+		order: 2;
+		margin-bottom: 10px;
+	}
+	.top-bar{
+		padding: 4%;
+	}
 }

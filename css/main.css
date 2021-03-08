@@ -1,3 +1,4 @@
+/*////////-Side Bar CSS-////////*/
 .sd-nav-rules{
 	width: 260px;
 	border-radius: 12px;
@@ -720,5 +721,19 @@
 	}
 	.ft-column{
 		width: 70%;
+	}
+	.footer-logos{
+		justify-content: center;
+	}
+	.ft-logo-txt{
+		order: 1;
+		margin-bottom: 10px;
+	}
+	.soc-logos{
+		order: 2;
+		margin-bottom: 10px;
+	}
+	.top-bar{
+		padding: 4%;
 	}
 }
