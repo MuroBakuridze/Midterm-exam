@@ -290,7 +290,7 @@
 .teble-content{
 	width: 100%;
 	padding: 20px 12%;
-	overflow: scroll;
+/*	overflow: scroll;*/
 }
 .table{
 	width: 100%;
